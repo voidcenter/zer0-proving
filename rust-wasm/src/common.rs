@@ -37,16 +37,17 @@ pub const ROUND_TIME: i64 = WAITING_TIME + WARNING_TIME + FIRING_TIME;
 
 
 pub fn current_milliseconds() -> u64 {
-    SystemTime::now()
-        .duration_since(UNIX_EPOCH)
-        .expect("Time went backwards")
-        .as_millis() as u64 // cast from u128 to u64
+    // SystemTime::now()
+    //     .duration_since(UNIX_EPOCH)
+    //     .expect("Time went backwards")
+    //     .as_millis() as u64 // cast from u128 to u64
+    return 1000;
 }
 
 
 
 #[derive(Debug, Clone, Copy, PartialEq, Serialize, Deserialize)]
-#[wasm_bindgen]
+// #[wasm_bindgen]
 pub enum GameState {
     STARTING = 0,
     WAITING = 1,
@@ -60,7 +61,7 @@ pub const GameStateList: [GameState; 5] =
 
 
 #[derive(Debug, Clone, Copy, Eq, Hash, PartialEq, Serialize, Deserialize)]
-#[wasm_bindgen]
+// #[wasm_bindgen]
 pub enum Direction {
     NONE,
     LEFT,
