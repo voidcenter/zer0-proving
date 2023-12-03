@@ -1,17 +1,17 @@
 
 use serde::*;
-use wasm_bindgen::prelude::*;
+// use wasm_bindgen::prelude::*;
 
 
 #[derive(Debug, Clone, Copy, Serialize, Deserialize)]
-#[wasm_bindgen]
+// #[wasm_bindgen]
 pub struct  Vector2 {
     pub x: i32,
     pub y: i32,
 }
 
 
-#[wasm_bindgen]
+// #[wasm_bindgen]
 impl Vector2 {
     pub fn new(x: i32, y: i32) -> Vector2 {
         Vector2 { x, y }
@@ -27,32 +27,32 @@ impl Vector2 {
         self.y *= fac;
     }
 
-    #[wasm_bindgen(getter)]
+    // #[wasm_bindgen(getter)]
     pub fn zero() -> Vector2 {
         Vector2::ZERO
     }
 
-    #[wasm_bindgen(getter)]
+    // #[wasm_bindgen(getter)]
     pub fn right() -> Vector2 {
         Vector2::RIGHT
     }
 
-    #[wasm_bindgen(getter)]
+    // #[wasm_bindgen(getter)]
     pub fn left() -> Vector2 {
         Vector2::LEFT
     }
 
-    #[wasm_bindgen(getter)]
+    // #[wasm_bindgen(getter)]
     pub fn up() -> Vector2 {
         Vector2::UP
     }
 
-    #[wasm_bindgen(getter)]
+    // #[wasm_bindgen(getter)]
     pub fn down() -> Vector2 {
         Vector2::DOWN
     }
 
-    #[wasm_bindgen(getter)]
+    // #[wasm_bindgen(getter)]
     pub fn one() -> Vector2 {
         Vector2::ONE
     }

@@ -24,7 +24,7 @@ pub fn player_tilepos_to_pixelpos (tilepos: Vector2) -> Vector2 {
 
 // PlayerState struct equivalent in Rust
 #[derive(Debug, Serialize, Deserialize)]
-#[wasm_bindgen]
+// #[wasm_bindgen]
 pub struct PlayerState {
     pub id: i32,
     pub pixelpos: Vector2,

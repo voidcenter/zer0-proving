@@ -6,12 +6,12 @@ const LCG_A: u64 = 22695477;
 const LCG_C: u64 = 1;
 
 
-#[wasm_bindgen]
+// #[wasm_bindgen]
 pub struct LCGRandGen {
     pub seed: u64,
 }
 
-#[wasm_bindgen]
+// #[wasm_bindgen]
 impl LCGRandGen {
     pub fn new(seed: u64) -> Self {
         Self {
