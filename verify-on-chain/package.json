@@ -4,9 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "ts-node scripts/test.ts",
-    "verify": "ts-node scripts/verify.ts",
-    "batch": "ts-node scripts/batch.ts"
+    "verify": "ts-node scripts/verify.ts"
   },
   "dependencies": {
     "cli-spinners": "^2.9.2",
