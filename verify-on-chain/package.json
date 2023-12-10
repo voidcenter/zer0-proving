@@ -1,0 +1,30 @@
+{
+  "name": "cloud",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "ts-node scripts/test.ts",
+    "verify": "ts-node scripts/verify.ts",
+    "batch": "ts-node scripts/batch.ts"
+  },
+  "dependencies": {
+    "cli-spinners": "^2.9.2",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.9.0",
+    "ora": "^7.0.1",
+    "ts-node": "^10.9.1",
+    "zkwasm-service-helper": "git+https://github.com/DelphinusLab/zkWasm-service-helper.git"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.3",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  }
+}
